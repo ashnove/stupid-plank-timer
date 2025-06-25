@@ -16,7 +16,7 @@ A simple, beautiful, and stupidly easy-to-use plank timer for Android. This app 
 
 ## Screenshots
 
-*(Add screenshots of the app here to showcase the UI and features.)*
+- ![image](https://github.com/user-attachments/assets/508ba20f-82a5-4fa0-8434-6f87589230b4)
 
 ## Built With
 
