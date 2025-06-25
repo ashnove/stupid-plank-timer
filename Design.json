@@ -1,0 +1,209 @@
+{
+    "designSystem": {
+      "name": "Modern Timer Interface",
+      "version": "1.0",
+      "theme": {
+        "colorPalette": {
+          "primary": {
+            "background": "#C85A6E",
+            "description": "Deep rose/burgundy gradient background"
+          },
+          "surface": {
+            "card": "rgba(255, 255, 255, 0.1)",
+            "description": "Semi-transparent overlay for cards"
+          },
+          "accent": {
+            "progress": "#FFFFFF",
+            "text": "#FFFFFF",
+            "description": "White for progress indicators and text"
+          },
+          "interactive": {
+            "button": "rgba(139, 69, 19, 0.8)",
+            "buttonHover": "rgba(139, 69, 19, 1.0)",
+            "description": "Dark brown for interactive elements"
+          }
+        },
+        "gradients": {
+          "background": "linear-gradient(135deg, #B85450 0%, #C85A6E 50%, #A84A5C 100%)",
+          "description": "Warm rose gradient with subtle variations"
+        }
+      },
+      "typography": {
+        "fontFamily": {
+          "primary": "system-ui, -apple-system, sans-serif",
+          "fallback": "Arial, Helvetica, sans-serif"
+        },
+        "scales": {
+          "title": {
+            "fontSize": "18px",
+            "fontWeight": "500",
+            "letterSpacing": "0.5px"
+          },
+          "display": {
+            "fontSize": "48px",
+            "fontWeight": "300",
+            "letterSpacing": "2px",
+            "description": "Large numerical displays"
+          },
+          "button": {
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "letterSpacing": "0.5px"
+          }
+        },
+        "color": {
+          "primary": "#FFFFFF",
+          "secondary": "rgba(255, 255, 255, 0.8)"
+        }
+      },
+      "layout": {
+        "container": {
+          "maxWidth": "320px",
+          "padding": "24px",
+          "borderRadius": "16px",
+          "backdrop": "blur(10px)"
+        },
+        "spacing": {
+          "xs": "8px",
+          "sm": "16px",
+          "md": "24px",
+          "lg": "32px",
+          "xl": "48px"
+        },
+        "grid": {
+          "columns": 1,
+          "gap": "24px",
+          "alignment": "center"
+        }
+      },
+      "components": {
+        "card": {
+          "background": "rgba(255, 255, 255, 0.1)",
+          "borderRadius": "16px",
+          "padding": "24px",
+          "backdropFilter": "blur(10px)",
+          "border": "1px solid rgba(255, 255, 255, 0.2)",
+          "boxShadow": "0 8px 32px rgba(0, 0, 0, 0.1)"
+        },
+        "header": {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "marginBottom": "32px"
+        },
+        "closeButton": {
+          "size": "24px",
+          "background": "transparent",
+          "border": "none",
+          "color": "#FFFFFF",
+          "cursor": "pointer",
+          "fontSize": "18px"
+        },
+        "progressRing": {
+          "size": "200px",
+          "strokeWidth": "8px",
+          "backgroundColor": "rgba(255, 255, 255, 0.2)",
+          "foregroundColor": "#FFFFFF",
+          "position": "relative",
+          "centerContent": {
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "position": "absolute",
+            "inset": "0"
+          }
+        },
+        "controlButtons": {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "marginTop": "32px",
+          "gap": "16px"
+        },
+        "button": {
+          "primary": {
+            "background": "rgba(139, 69, 19, 0.8)",
+            "borderRadius": "50%",
+            "size": "56px",
+            "border": "none",
+            "color": "#FFFFFF",
+            "cursor": "pointer",
+            "transition": "all 0.2s ease"
+          },
+          "secondary": {
+            "background": "transparent",
+            "border": "none",
+            "color": "#FFFFFF",
+            "fontSize": "14px",
+            "fontWeight": "500",
+            "cursor": "pointer",
+            "padding": "8px 16px",
+            "borderRadius": "8px",
+            "transition": "all 0.2s ease"
+          }
+        }
+      },
+      "interactions": {
+        "hover": {
+          "button": {
+            "transform": "scale(1.05)",
+            "opacity": "0.9"
+          }
+        },
+        "active": {
+          "button": {
+            "transform": "scale(0.95)"
+          }
+        },
+        "focus": {
+          "outline": "2px solid rgba(255, 255, 255, 0.5)",
+          "outlineOffset": "2px"
+        }
+      },
+      "animations": {
+        "progressRing": {
+          "duration": "0.3s",
+          "easing": "ease-out",
+          "property": "stroke-dashoffset"
+        },
+        "buttonTransition": {
+          "duration": "0.2s",
+          "easing": "ease",
+          "property": "all"
+        }
+      },
+      "patterns": {
+        "glassmorphism": {
+          "background": "rgba(255, 255, 255, 0.1)",
+          "backdropFilter": "blur(10px)",
+          "border": "1px solid rgba(255, 255, 255, 0.2)"
+        },
+        "circularProgress": {
+          "strokeLinecap": "round",
+          "transform": "rotate(-90deg)",
+          "transformOrigin": "center"
+        }
+      },
+      "accessibility": {
+        "contrast": {
+          "minimum": "4.5:1",
+          "preferred": "7:1"
+        },
+        "focusIndicators": true,
+        "semanticMarkup": true,
+        "ariaLabels": true
+      },
+      "responsive": {
+        "breakpoints": {
+          "mobile": "320px",
+          "tablet": "768px",
+          "desktop": "1024px"
+        },
+        "scaling": {
+          "mobile": "1x",
+          "tablet": "1.2x",
+          "desktop": "1.4x"
+        }
+      }
+    }
+  }
